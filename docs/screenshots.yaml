@@ -1,0 +1,20 @@
+screenshots:
+- name: home
+  actions:
+  - get: "/"
+- name: submit-job-menu
+  actions:
+  - login:
+  - get: "/"
+  - menu.click: "scheduler"
+  - highlight: "a[href='/scheduler/jobsubmit']"
+- name: submit-job
+  actions:
+  - get: "/scheduler/jobsubmit"
+  - send.keys:
+      selector: "#definition-input"
+      content: "something"
+  - click: "#validate"
+  - wait:
+      selector: ""
+      timeout:
