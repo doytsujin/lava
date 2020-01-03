@@ -15,7 +15,7 @@ The systemd service is called `lava-logs`.
 
 lava-logs should be able to:
 
-* connect to the [postgresql](../postgresql) database.
+* connect to the [postgresql](../postgresql) database
 * connect to the [lava-master](../lava-master) socket
 * open a socket on port `5555`
 * write the job logs in `/var/lib/lava-server/default/media/job-output/`
