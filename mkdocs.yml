@@ -49,6 +49,7 @@ nav:
   - Basic Tutorials:
     - Instance:
       - Install: admin/basic-tutorials/instance/install.md
+      - Configure: admin/basic-tutorials/instance/configure.md
       - Upgrade: admin/basic-tutorials/instance/upgrade.md
       - Backup: admin/basic-tutorials/instance/backup.md
     - lavacli: admin/basic-tutorials/lavacli.md
