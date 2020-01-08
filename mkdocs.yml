@@ -7,12 +7,16 @@ site_description: LAVA documentation
 # https://squidfunk.github.io/mkdocs-material/getting-started/#customization
 markdown_extensions:
 - admonition
+- codehilite
 - toc:
     permalink: true
+- markdown.extensions.abbr
 # https://github.com/simonrenger/markdown-include-lines
 # https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
-#- pymdownx.details
-#- pymdownx.superfences
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.snippets:
+    base_path: docs/_snippets
 
 # Debugging ?
 # Job errors ?
