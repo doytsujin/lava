@@ -4,7 +4,7 @@
 
 The database is managed by
 [PostgreSQL](../../../../technical-references/services/postgresql/). See the
-[PostgreSQL documentation](https://www.postgresql.org/docs/9.1/backup.html) for
+[PostgreSQL documentation][pgsql-backup] for
 details.
 
 To backup the database run:
@@ -32,3 +32,5 @@ tar czf lava-server-etc.tar.gz /etc/lava-coordinator/ \
                                /etc/lava-server/
 tar czf lava-server-data.tar.gz /var/lib/lava-server/default/media/
 ```
+
+--8<-- "refs.txt"

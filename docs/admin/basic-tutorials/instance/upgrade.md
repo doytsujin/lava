@@ -29,7 +29,7 @@ We advice to put the instance in maintenance before any upgrade.
 ### Docker
 
 When a new version of LAVA is released, a Docker image is published on [docker
-hub](https://hub.docker.com/u/lavasoftware/).
+hub][lava-docker-hub].
 
 In order to upgrade, admins should just pull the latest **docker-compose
 configuration**:
@@ -52,7 +52,7 @@ docker-compose up
 ### Debian
 
 When a new version of LAVA is released, a new Debian package is published on
-the official [Debian repository](https://apt.lavasoftware.org/release/).
+the official [Debian repository][lava-debian].
 
 You can upgrade using **apt**:
 

@@ -36,7 +36,7 @@ apt-get install docker.io docker-compose git
 
 ### Install
 
-Get the **docker-compose** files from [gitlab](https://git.lavasoftware.org/lava/pkg/docker-compose) and use it.
+Get the **docker-compose** files from [gitlab][lava-docker-compose] and use it.
 
 ```shell
 git clone https://git.lavasoftware.org/lava/pkg/docker-compose
@@ -45,7 +45,7 @@ docker-compose pull
 docker-compose up
 ```
 
-The newly created instance is now available at [localhost](http://localhost/).
+The newly created instance is now available at [localhost].
 
 ## Debian
 
@@ -98,4 +98,6 @@ service lava-logs start
 service lava-slave start
 ```
 
-The newly created instance is now available at [localhost](http://localhost/).
+The newly created instance is now available at [localhost].
+
+--8<-- "refs.txt"
