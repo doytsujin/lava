@@ -1,16 +1,16 @@
-# Role
+# LAVA publisher
 
 Receive and forward events coming from lava services.
 
-# Command line
+## Command line
 
 This daemon is part of lava-server and is started by: `lava-server manage lava-publisher`.
 
-# Service
+## Service
 
 The systemd service is called `lava-publisher`.
 
-# Dependencies
+## Dependencies
 
 lava-publisher should be able to:
 
@@ -22,7 +22,7 @@ The services that generate events ([lava-logs](../lava-logs),
 [lava-server-gunicorn](../lava-server-gunicorn)) should be able to write to the
 local socket.
 
-# Configuration
+## Configuration
 
 Daemon start options:
 
@@ -34,12 +34,12 @@ Django configuration:
 * `/etc/lava-server/instance.conf`
 * `/etc/lava-server/settings.conf`
 
-# Logs
+## Logs
 
 The logs are stored in `/var/log/lava-server/lava-publisher.log`
 
 The log rotation is configured in `/etc/logrotate.d/lava-publisher-log`.
 
-# Security
+## Security
 
 TODO: should activate encryption

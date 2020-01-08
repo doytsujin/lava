@@ -1,4 +1,4 @@
-# Role
+# LAVA server gunicorn
 
 `lava-server-gunicorn` is the web server that will handle http requests comming
 from users.
@@ -6,22 +6,22 @@ from users.
 This process will not serve static files that are handled directly by
 [apache2](../apache2).
 
-# Command line
+## Command line
 
 Run `gunicorn lava-server.wsgi`
 
-# Service
+## Service
 
 The systemd service is called `lava-server-gunicorn`.
 
-# Dependencies
+## Dependencies
 
 lava-logs should be able to:
 
 * connect to the [postgresql](../postgresql) database
 * open a socket on port `8000`
 
-# Configuration
+## Configuration
 
 Daemon start options:
 
@@ -33,7 +33,7 @@ Django configuration:
 * `/etc/lava-server/instance.conf`
 * `/etc/lava-server/settings.conf`
 
-# Logs
+## Logs
 
 The logs are stored in `/var/log/lava-server/gunicorn.log` and
 `/var/log/lava-server/django.log`.
@@ -41,7 +41,7 @@ The logs are stored in `/var/log/lava-server/gunicorn.log` and
 The log rotation is configured in `/etc/logrotate.d/lava-server-gunicorn-log`
 and `/etc/logrotate.d/django-log`.
 
-# Security
+## Security
 
 This process should be always behind a reverse proxy like
 [apache2](../apache2).

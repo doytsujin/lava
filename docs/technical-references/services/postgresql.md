@@ -1,16 +1,16 @@
-# Role
+# PostgreSQL
 
 Store the different objects like Device, DeviceType, TestJob, ...
 
-# Command line
+## Command line
 
 This service is usually only manage via systemd.
 
-# Service
+## Service
 
 The systemd service is called `postgresql`.
 
-# Logs
+## Logs
 
 The logs are stored under `/var/log/posqtgresql/`
 

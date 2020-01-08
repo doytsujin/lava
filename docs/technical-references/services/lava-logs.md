@@ -1,17 +1,17 @@
-# Role
+# LAVA logs
 
 Receive and store the logs sent by lava-run.
 The logs are streamed over the network.
 
-# Command line
+## Command line
 
 This daemon is part of lava-server and is started by: `lava-server manage lava-logs`
 
-# Service
+## Service
 
 The systemd service is called `lava-logs`.
 
-# Dependencies
+## Dependencies
 
 lava-logs should be able to:
 
@@ -20,7 +20,7 @@ lava-logs should be able to:
 * open a socket on port `5555`
 * write the job logs in `/var/lib/lava-server/default/media/job-output/`
 
-# Configuration
+## Configuration
 
 Daemon start options:
 
@@ -32,12 +32,12 @@ Django configuration:
 * `/etc/lava-server/instance.conf`
 * `/etc/lava-server/settings.conf`
 
-# Logs
+## Logs
 
 The logs are stored in `/var/log/lava-server/lava-logs.log`
 
 The log rotation is configured in `/etc/logrotate.d/lava-logs-log`.
 
-# Security
+## Security
 
 TODO: should activate encryption

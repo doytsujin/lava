@@ -1,4 +1,4 @@
-# Role
+# LAVA master
 
 This process is at the sametime the master and the scheduler. lava-master is
 responsible for:
@@ -8,15 +8,15 @@ responsible for:
 * start and cancel jobs
 * keep track of jobs state
 
-# Command line
+## Command line
 
 This daemon is part of lava-server and is started by: `lava-server manage lava-master`
 
-# Service
+## Service
 
 The systemd service is called `lava-master`.
 
-# Dependencies
+## Dependencies
 
 lava-logs should be able to:
 
@@ -25,7 +25,7 @@ lava-logs should be able to:
 * visible to [lava-slave](../lava-slave)
 * open a socket on port `5556`
 
-# Configuration
+## Configuration
 
 Daemon start options:
 
@@ -37,12 +37,12 @@ Django configuration:
 * `/etc/lava-server/instance.conf`
 * `/etc/lava-server/settings.conf`
 
-# Logs
+## Logs
 
 The logs are stored in `/var/log/lava-server/lava-master.log`
 
 The log rotation is configured in `/etc/logrotate.d/lava-master-log`.
 
-# Security
+## Security
 
 TODO: should activate encryption
