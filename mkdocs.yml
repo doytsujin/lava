@@ -4,6 +4,18 @@ repo_name: GitLab
 site_author: LAVA team
 site_description: LAVA documentation
 
+# https://squidfunk.github.io/mkdocs-material/
+# python3 -m pip install mkdocs-material
+theme:
+  name: "material"
+  language: "en"
+  include_sidebar: true
+  feature:
+    tabs: true
+  palette:
+    primary: "light-green"
+    accent: "light-green"
+
 # https://squidfunk.github.io/mkdocs-material/getting-started/#customization
 markdown_extensions:
 - admonition
