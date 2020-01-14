@@ -29,18 +29,17 @@ actions:
       minutes: 5
     media: tmpfs
     prompts:
-      - 'linaro-test'
-      - 'root@debian:~#'
+    - 'root@debian:~#'
 
 - test:
     timeout:
       minutes: 5
     definitions:
-        - repository: http://git.linaro.org/lava-team/lava-functional-tests.git
-          from: git
-          path: lava-test-shell/smoke-tests-basic.yaml
-          name: smoke-tests
-        - repository: http://git.linaro.org/lava-team/lava-functional-tests.git
-          from: git
-          path: lava-test-shell/single-node/singlenode03.yaml
-          name: singlenode-advanced
+    - repository: http://git.linaro.org/lava-team/lava-functional-tests.git
+      from: git
+      path: lava-test-shell/smoke-tests-basic.yaml
+      name: smoke-tests
+    - repository: http://git.linaro.org/lava-team/lava-functional-tests.git
+      from: git
+      path: lava-test-shell/single-node/singlenode03.yaml
+      name: singlenode-advanced
